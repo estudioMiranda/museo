@@ -1,23 +1,23 @@
 <template>
-<div class="inicio">
+<div class="container">
     <Navbar></Navbar>
     <img alt="Vue logo" src="../assets/logo.png">
-    <div>
-        <b-button>Button</b-button>
-        <b-button variant="danger">Button</b-button>
-        <b-button variant="success">Button</b-button>
-        <b-button variant="outline-primary">Button</b-button>
-    </div>
+    <Obras></Obras>
+
 </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
+import Obra from '@/components/Obra.vue'
+import Obras from '@/components/Obras.vue'
 
 export default {
     name: 'Inicio',
     components: {
-        Navbar
+        Navbar,
+        Obra,
+        Obras
     }
 }
 </script>
